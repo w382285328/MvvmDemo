@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_bar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/layout_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/image_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/b_back"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="visible" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        >
+
+    <TextView
+        android:id="@+id/tx_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ellipsize="end"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxWidth="250dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/v_t_hint"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="新增"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/btn_circle_bg"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/btnSearch"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@mipmap/icon_search_white"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

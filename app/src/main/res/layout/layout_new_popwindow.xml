@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    >
+    <com.huantai.qhytims.view.MaxListViewForPop
+        android:id="@+id/amorpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/text_gray"
+        android:background="@color/white"
+        android:dividerHeight="1px">
+    </com.huantai.qhytims.view.MaxListViewForPop>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/transparent"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/text_black"
+        android:background="@color/white"
+        android:text="取消"
+        />
+
+</LinearLayout>
